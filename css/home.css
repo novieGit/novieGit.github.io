@@ -1,0 +1,248 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  border: none;
+  outline: none;
+  scroll-behavior: smooth;
+  font-family: "Poppins", sans-serif;
+  color: var(--text-color);
+}
+:root{
+  --bg-color: #212121;
+  --second-bg-color: #131313;
+  --text-color: white;
+  --main-color: #00ffee;
+}
+
+header{
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  padding: 25px;
+  backdrop-filter: blur(10px);
+  z-index: 2;
+}
+.navbar{
+  width: 700px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: 80px;
+}
+.navbar a:active{
+  color: var(--main-color);
+}
+/* HIDDEN BURGER ICON */
+#menu-icon{
+  font-size: 1.5rem;
+  color: var(--main-color);
+  display: none;
+  padding-left: 10px;
+}
+
+section{
+background-color: var(--bg-color);
+
+min-height: 100vh;
+position: relative;
+overflow-x: hidden;
+overflow-y:hidden; 
+}
+
+
+.containerbackground { 
+  position: absolute;
+  left: -90px; 
+  bottom: 28%;
+  transform: rotate(2505deg); 
+  -webkit-transform: rotate(2505deg); 
+  color: transparent; 
+  font-size: 325px;
+  font-weight: bolder;
+  -webkit-text-stroke: 2px rgba(255, 255, 255, 0.05);
+}
+.home-content{
+  position: absolute;
+  margin-left: 10%;
+  margin-top: 15%;
+}
+.home-content p{
+  font-size: 100px;
+  width: 600px;
+  font-weight: 700; 
+}
+.home-content span{
+  color: var(--main-color);
+}
+.btn{
+  background-color: var(--main-color);
+  padding: 10px 30px;
+  border-radius: 5px;
+  margin-left: 7px;
+  margin-top: 10px;
+  color: black;
+}
+
+
+/* MEDIAAAA QUAERYYYY */
+
+/* Extra small devices (phones, 600px and down) */
+@media (max-width: 600px) {
+  section{
+    min-height: 100vh;
+    position: relative;
+  }
+  .containerbackground{
+    font-size: 150px;
+    transform: rotate(2480deg); 
+    -webkit-transform: rotate(2480deg); 
+    left: -130px;
+    bottom: 38%;
+  }
+  .home-content{
+    margin-top: 200px;
+  }
+  .home-content p{
+    font-size: 40px;
+    width: 300px;
+  }
+
+/* BURGER ICON SA HEADER */
+  #menu-icon{
+    display: block;
+    right: 0;
+  }
+  .navbar {
+    position: absolute;
+    top: 100%;
+    width: 200px;
+    left: -80px;
+    padding-left: 2.5rem;
+    padding-bottom: 1rem;
+    background: #212121;
+    backdrop-filter: blur(20px);
+    border-bottom-right-radius: 2rem;
+    border-right: 2px solid var(--main-color);
+    border-bottom: 2px solid var(--main-color);
+    display: none;
+  }
+  .navbar.active {
+    display: block;
+  }
+  .navbar a {
+    display: block;
+    font-size: 1rem;
+    margin: 1rem 0;
+    color: white;
+  }
+
+/* ABOUTTTT SECTIONNNNNN */
+  .heading{
+    font-size: 25px;
+    margin-top: 80px;
+  }
+  .heading::before{
+    font-size: 60px;
+    top: -23px;
+  }
+  .about-content-flex{
+    display: block;
+  }
+  .profile{
+    margin: 0;
+    padding: 15px 0 0 0;
+  }
+  .personal-infos{
+    padding: 20px;
+  }
+  .img-container::before{
+    top: 10px;
+    right: -8px;
+    bottom: -6px;
+    left: 10px;
+    border: 3px solid var(--main-color);
+  }
+
+  .pfp{
+    height: 150px;
+    width: 200px;
+    object-fit: cover;
+  }
+  .personal-infos p{
+    font-size: 12px;
+    line-height: normal;
+    margin-bottom: 3px;
+  }
+  .info .first-p{
+    font-size: 15px;
+    padding-bottom: 5px;
+  }
+  .grid{
+    padding: 12px 0;
+    row-gap: 10px;
+    column-gap: 8px;
+  }
+  .title{
+    color: var(--main-color);
+    font-weight: 300;
+  }
+  .social-icons{
+    margin-top: 20px;
+  }
+
+  /* RESUMEEEE SECTIONNN */
+  section .resume{
+    min-height: 200vh;
+    max-width: 600px;
+    position: relative;
+  }
+  .resume-main-container{
+    width: 100px;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    font-size: 12px;
+  }
+ 
+  /* di na sya muagana sa unsay idungag nga adjustments wa ko kabalo ngano lisod kaayo sir dire ra ko taman kay wa na koy tuon sa laing sub mwehehe  */
+
+  /* TESTIMONIALSS SECTIONNN */
+
+}
+
+
+
+@media (min-width: 601px) and (max-width: 992px) {
+  section{
+    min-height: 100vh;
+    position: relative;
+  }
+  .containerbackground{
+    font-size: 230px;
+    transform: rotate(2490deg); 
+    -webkit-transform: rotate(2490deg); 
+    left: -15%;
+    bottom: 28%;
+  }
+  .home-content{
+    margin-top: 200px;
+  }
+  .home-content p{
+    font-size: 40px;
+    width: 300px;
+  }
+
+  /* ABOUT SECTION */
+  .profile{
+    
+  }
+}
+
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media (min-width: 993px) {
+
+}

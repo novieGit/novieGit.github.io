@@ -1,0 +1,135 @@
+.resume{
+  background-color: var(--bg-color);
+}
+.resume-main-container{
+  display: flex;
+}
+
+.second-container,
+.third-container{
+  flex: 1;
+  padding: 95px 50px 50px 80px;
+  
+}
+.first-container{
+  width: 400px;
+  padding: 95px 50px 50px 80px;
+}
+.resume .title{
+  font-size: 20px;
+  margin-bottom: 15px;
+}
+.content-container{
+  margin-bottom: 50px;
+}
+.cont{
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+.abbreviation{
+  border: 1px solid white;
+  width: 30px;
+  padding: 5px;
+  margin-right: 10px;
+  text-align: center;
+}
+
+.content-container p{
+  line-height: 30px;
+}
+.content-container-lastpart p{
+  line-height: 30px;
+}
+
+/* middleeee flexxxx */
+.timeline-items{
+ display: flex;
+ flex-direction: column;
+ flex-wrap: wrap;
+ position: relative;
+}
+.timeline-items::before{
+  content: "";
+  position: absolute;
+  width: 5px;
+  height: 98%;
+  background-color: var(--main-color);
+}
+.timeline-item{
+  margin-bottom: 20px;
+  width: 100%;
+  position: relative;
+  padding-left: 30px;
+}
+.timeline-item:nth-last-child(){
+  margin-bottom: -1px;
+}
+.timeline-dot{
+  height: 21px;
+  width: 21px;
+  background-color: var(--main-color);
+  box-shadow: 0 0 20px var(--main-color);
+  position: absolute;
+  left: -8px;
+  border-radius: 50%;
+}
+.timeline-content{
+  background-color: var(--bg-color);
+  border: 1px solid var(--main-color);
+  padding: 15px 30px;
+  border-radius: 4rem;
+  box-shadow: 0 0 10px var(--main-color);
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+  vertical-align: middle;
+}
+.timeline-content h3{
+  font-size: 20px;
+  color: white;
+  margin: 0 0 10px;
+  font-weight: 500;
+}
+.timeline-content p{
+  color: white;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 22px;
+}
+
+
+
+
+/* lastttt flexxx */
+.can-do-grid, .design-skill-grid,
+.hobbies-grid{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  line-height: 30px;
+  margin-bottom: 50px;
+}
+.hobbies-grid{
+  margin-bottom: 0px;
+  text-align: center;
+}
+
+.hobbies{
+  padding-right: 100px;
+  padding-top: 10px;
+}
+
+
+
+/*<ul>
+            <li>Logo</li>
+            <li>Stationary</li>
+            <li>Branding</li>
+            <li>Newspaper</li>
+          </ul>
+          <ul>
+            <li>Packaging</li>
+            <li>Catalog</li>
+            <li>Strategy</li>
+            <li>Advertisement</li>
+          </ul>
+          */

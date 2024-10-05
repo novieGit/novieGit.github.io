@@ -1,0 +1,56 @@
+.testimonials .heading::before {
+  content: "Testimonials";
+  font-size: 100px;
+  color: rgba(255, 255, 255, 0.05);
+  position: absolute;
+  top: -35px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1;
+}
+.testimonial-item img{
+  width: 8rem;
+  border-radius: 50%;
+  border: 3px solid var(--main-color);
+  box-shadow: 0 0 25px var(--main-color);
+}
+.testimonial-item h4{
+  font-size: 16px;
+  font-weight: normal;
+  color: gray;
+  margin-top:-20px;
+  padding: 0;
+}
+.testimonial-items{
+  display: grid;
+  grid-template-columns: repeat(3,400px);
+  justify-content: space-evenly;
+  margin-top: 40px;
+}
+.testimonial-item{
+  min-height: 480px;
+  max-width: 400px;
+  background-color: rgba(0, 0, 0, 0.7);
+  border: 3px solid rgba(238, 238, 238, 0.2);
+  border-radius: 2rem;
+
+  padding: 30px 50px;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  gap: 1.5rem;
+  color: white;
+  transition: 0.4s ease-in-out;
+}
+.testimonial-item:hover{
+  border: 3px solid var(--main-color);
+  transform: translateY(-10px)scale(1.03);
+  box-shadow: 0 0 50px var(--main-color);
+}
+
+.testimonials{
+  background-color: var(--second-bg-color);
+}

@@ -1,0 +1,97 @@
+.about{
+  background-color: var(--second-bg-color);
+  position: relative;
+}
+.heading {
+  font-size: 50px;
+  font-weight: bold;
+  color: var(--main-color); 
+  position: relative;
+
+  text-align: center;
+  margin-top: 95px;
+}
+.heading::before {
+  content: "About";
+  font-size: 120px;
+  color: rgba(255, 255, 255, 0.05);
+  position: absolute;
+  top: -40px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.about-content-flex{
+  display: flex;
+  
+}
+.profile{
+  flex: 50%;
+  padding-top: 50px;
+  text-align: center;
+  padding-left: 20%;
+}
+.personal-infos{
+  flex: 50%;
+  padding-top: 50px;
+  padding-right:150px;
+}
+.img-container{
+  display: inline-block ;
+  position: relative;
+  z-index: 1;
+}
+.img-container::before{
+  content: "";
+  position: absolute;
+  top: 20px;
+  right: -25px;
+  bottom: -22px;
+  left: 20px;
+  border: 6px solid var(--main-color);
+  z-index: -1;
+}
+
+.pfp{
+  height: 400px;
+  width: 320px;
+  object-fit: cover;
+}
+.personal-infos p{
+  font-size: 18px;
+  line-height: 28px;
+}
+.info .first-p{
+  font-size: 23px;
+  padding-bottom: 15px;
+}
+p span{
+  color: var(--main-color);
+}
+.grid{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 20px 0;
+  row-gap: 20px;
+  text-align: center;
+}
+.title{
+  color: var(--main-color);
+  font-weight: 700;
+}
+.education{
+  text-align: center;
+}
+.social-icons{
+  display: flex;
+  justify-content: center;
+  gap: 7px;
+  margin-top: 50px;
+}
+.social-icons a{
+  border: 1px solid;
+  text-align: center;
+  vertical-align: middle;
+  padding: 5px;
+  padding-bottom: 4px;
+}
+
